@@ -1,17 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Informer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+    <div class="informer-container">
+
+      <div class="temperature">
+        <img src="img/thermometer.png">
+        <div class="temp-real">1</div>
+        <div class="temp-feel">-3.8</div>
+      </div>
+
+      <div class="flex-break"></div>
+
+      <div class="humidity">
+        <img src="img/humidity.png"> 12 <small>%</small>
+      </div>
+
+      <div class="vertical-divider"></div>
+
+      <div class="wind">
+        <img src="img/wind.png"> 12 <small>м/с</small>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
 </html>
