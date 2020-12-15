@@ -1,17 +1,35 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="app">
+    <div class="informer-container">
+      <Temperature v-bind:real_temp="temperatureReal" v-bind:feel_temp="temperatureFeel"/>
+      <div class="flex-break"></div>
+      <Humidity v-bind:humidity="humidity"/>
+      <div class="vertical-divider"></div>
+      <Wind v-bind:wind_speed='wind'/>
+
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Temperature from './components/temperature.vue'
+import Humidity from './components/humidity.vue'
+import Wind from './components/wind.vue'
 
 export default {
   name: 'App',
+  data(){
+    return {
+      temperatureReal: 1,
+      temperatureFeel: '-3.2',
+      humidity: 6,
+      wind: 20
+    }
+  },
   components: {
-    HelloWorld
+    Temperature,
+    Humidity,
+    Wind
   }
 }
 </script>
