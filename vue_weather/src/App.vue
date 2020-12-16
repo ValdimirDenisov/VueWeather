@@ -5,7 +5,7 @@
       <div class="flex-break"></div>
       <Humidity v-bind:humidity="humidity"/>
       <div class="vertical-divider"></div>
-      <Wind v-bind:wind_speed='wind'/>
+      <Wind v-bind:wind_speed='wind' />
 
     </div>
   </div>
